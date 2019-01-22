@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Keep</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Main Body -->
+    <div id="mainView" class="shadow-lg p-3 mb-5 bg-white rounded">
+        <!-- Title -->
+        <div id="title">
+            <div class="form-group">
+                <input type="text" class="form-control" id="txtTitle" placeholder="Title">
+            </div>
+        </div>
+        <!-- Content -->
+        <div id="content">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text" id="list">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <input type="text" class="form-control" id="items" placeholder="List Item">
+            </div>
+        </div><br>
+        <!-- Footer -->
+        <div id="foot">
+            <i class="fas fa-palette" id="icon" data-toggle="tooltip" data-placement="top" title="Pick a Color"></i>
+            <button type="button" class="btn btn-light" id="btnClose" data-toggle="tooltip" data-placement="top" title="Close">Close</button>
+        </div>
+    </div>
+    <br>
+
+    <!-- Packery -->
+
+    <div class="grid" id="packery">
+        <div class="grid-item grid-item--width2"></div>
+    </div>
+    <br>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/packery.pkgd.min.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
